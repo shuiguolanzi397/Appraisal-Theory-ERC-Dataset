@@ -61,18 +61,19 @@ To reproduce IEMOCAP results:
 
 ```bash
 python scripts/iemocap_processing.py
+
 ### IEMOCAP Build + Emotion-Shift Dialogue Filter
 
 This script does **two steps** in one run:
 
-1. **Build / merge IEMOCAP (Female track only)** into a single CSV:
+ **Step A Build / merge IEMOCAP (Female track only)** into a single CSV:
    - Reads `IEMOCAP_full_release/Session1~Session5`
    - Uses transcription files with filename pattern: `Ses??F_*.txt` (Female track)
    - Loads emotion labels from `EmoEvaluation`
    - Converts emotion abbreviations (e.g., `neu`, `ang`) into full names (e.g., `neutral`, `anger`)
    - Outputs a merged CSV file
 
-2. **Filter dialogues by emotion shift rules**:
+ **Step B Filter dialogues by emotion shift rules**:
    - Each `Dialogue_ID` must contain at least **4 unique emotions**
    - Across speakers, the dialogue must have at least **2 emotion shifts**
      (emotion shift = a speaker's emotion differs from their previous turn)
