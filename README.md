@@ -1,4 +1,4 @@
-# Appraisal-Theory-ERC-Dataset
+# Emotion-Prediction-Dataset
 
 This repository provides a processed benchmark dataset for appraisal-based emotion prediction (LREC 2026). This repository accompanies the LREC 2026 paper:
 "Appraisal Theory-Informed Emotion Prediction"
