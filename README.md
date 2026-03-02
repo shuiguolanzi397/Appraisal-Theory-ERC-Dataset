@@ -66,9 +66,9 @@ python scripts/iemocap_processing.py
 
 This script does **two steps** in one run:
 
- **Step A Build / merge IEMOCAP (Female track only)** into a single CSV:
+ **Step A Build / merge IEMOCAP (Female track only) into a single CSV**:
    - Reads `IEMOCAP_full_release/Session1~Session5`
-   - Uses transcription files with filename pattern: `Ses??F_*.txt` (Female track)
+   - Uses transcription files with filename pattern: `SesXXF_*.txt` (Female track only, where XX denotes the session number)
    - Loads emotion labels from `EmoEvaluation`
    - Converts emotion abbreviations (e.g., `neu`, `ang`) into full names (e.g., `neutral`, `anger`)
    - Outputs a merged CSV file
