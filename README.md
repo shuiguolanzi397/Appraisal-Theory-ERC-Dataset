@@ -19,7 +19,7 @@ The merged dataset contains the following columns, Dialogue_ID and Utterance_ID 
 | Set | Data split (train / dev / test) |
 | expectation | Model-generated or annotated psychological expectation (if applicable) |
 | dataset | Source dataset name (MELD / EmoryNLP / DailyDialog) |
-| Moment_Utterence_ID | Reference utterance index used for expectation alignment |
+| Moment_Utterance_ID | Reference utterance index used for expectation alignment |
 
 ## Data Sources
 
