@@ -51,7 +51,7 @@ This repository redistributes processed forms of publicly available datasets in 
 
 ## IEMOCAP (Not Redistributed)
 
-IEMOCAP is not redistributed due to its restricted license.
+IEMOCAP is not redistributed due to its restricted license. No original audio files are redistributed.
 
 To reproduce IEMOCAP results:
 1. Obtain the dataset from https://sail.usc.edu/iemocap/
