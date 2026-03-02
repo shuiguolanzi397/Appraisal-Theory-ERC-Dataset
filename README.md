@@ -48,7 +48,7 @@ IEMOCAP is not redistributed due to its restricted license.
 To reproduce IEMOCAP results:
 1. Obtain the dataset from https://sail.usc.edu/iemocap/
 2. Place the data in a local folder, Run the processing script.
-# IEMOCAP Build + Emotion-Shift Dialogue Filter
+### IEMOCAP Build + Emotion-Shift Dialogue Filter
 
 This script does **two steps** in one run:
 
