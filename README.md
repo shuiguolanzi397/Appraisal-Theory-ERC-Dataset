@@ -4,20 +4,22 @@ This repository provides a processed benchmark dataset for appraisal-based emoti
 
 ## Dataset Description
 
-The merged dataset contains the following columns:
+The merged dataset contains the following columns, Dialogue_ID and Utterance_ID are re-indexed after merging:
 
-- Sr No.
-- Is_Transition
-- Is_Appraisal_Driven
-- Utterance
-- Speaker
-- Emotion
-- Dialogue_ID
-- Utterance_ID
-- Set (train/dev/test)
-- expectation
-- dataset
-- Moment_Utterence_ID
+| Column Name | Description |
+|-------------|-------------|
+| Sr No. | Global row index after dataset merging |
+| Is_Transition | Binary indicator (1 = emotion differs from previous utterance of same speaker) |
+| Is_Appraisal_Driven | Binary indicator (1 = transition selected as appraisal-driven event) |
+| Utterance | Text content of the dialogue utterance |
+| Speaker | Speaker identifier (A/B or character ID depending on source dataset) |
+| Emotion | Ground-truth emotion label from original dataset |
+| Dialogue_ID | Dialogue identifier (re-indexed after merging) |
+| Utterance_ID | Position of utterance within the dialogue |
+| Set | Data split (train / dev / test) |
+| expectation | Model-generated or annotated psychological expectation (if applicable) |
+| dataset | Source dataset name (MELD / EmoryNLP / DailyDialog) |
+| Moment_Utterence_ID | Reference utterance index used for expectation alignment |
 
 ## Data Sources
 
@@ -52,3 +54,4 @@ To reproduce IEMOCAP results:
 
 - Code and newly added annotations (e.g., expectation, transition flags) are licensed under MIT License.
 - Original dataset licenses remain valid for their respective data portions.
+
